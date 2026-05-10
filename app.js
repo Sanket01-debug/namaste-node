@@ -1,14 +1,21 @@
+require("./xyz.js")
+
+// import {x, calculateSum } from "./sum.js";
+
+// const {x, calculateSum} = require("./calculate/sum.js")
+// const {calculateMultiply} = require("./calculate/multiply.js")
+const {calculateMultiply, calculateSum} = require("./calculate")
+
+const data = require("./data.json");
+console.log(data);
+
+
 var name = "Namaste NodeJS";
 var a = 10;
 var b = 20;
-// console.log(name);
-// console.log(a+b);
+// var x = 100;
 
-// console.log(global);
+calculateSum(a, b);
+calculateMultiply(a, b);
 
-// console.log(this);
-
-// console.log(globalThis);
-
-console.log(globalThis === global);
 
