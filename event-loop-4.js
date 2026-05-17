@@ -9,6 +9,7 @@ Promise.resolve("Promise").then(console.log);
 fs.readFile("./file.txt", "utf8", () => {
     console.log("File Reading CB");
 });
+
 process.nextTick(() => {
     process.nextTick(() => console.log("inner nextTick"));
     console.log("nextTick");
